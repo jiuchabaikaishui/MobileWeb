@@ -1,0 +1,11 @@
+div.main {
+  background-color: #999999;
+  width: 200px;
+  height: 150px;
+}
+div.main .text {
+  color: red;
+}
+div.main > .text {
+  font-size: 39px;
+}

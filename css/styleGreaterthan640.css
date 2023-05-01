@@ -1,0 +1,11 @@
+div {
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+div:first-of-type {
+    background-color: red;
+}
+div:last-of-type {
+    background-color: cyan;
+}

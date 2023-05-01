@@ -1,0 +1,13 @@
+@mainColor: #666666 + #333333;
+@textColor: red;
+div.main {
+    background-color: @mainColor;
+    width: 100px * 2;
+    height: (100px / 2) + 100;
+    .text {
+        color: @textColor;
+    }
+    > .text {
+        font-size: 40px - 1rem;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屏幕适配原理</title>
+
+    <style>
+        @media screen and (max-width: 375px) {
+            html {
+                /* 根据iPhone6 375 的设计稿将屏幕分为15份 */
+                font-size: 25px;
+            }
+        }
+        /* 12 */
+        @media screen and (min-width: 390px) {
+            html {
+                /* 根据比例缩放 */
+                font-size: 26px;
+            }
+        }
+        /* Xr */
+        @media screen and (min-width: 414px) {
+            html {
+                /* 根据比例缩放 */
+                font-size: 27.6px;
+            }
+        }
+        div {
+            width: 4rem;
+            height: 4rem;
+            font-size: 1rem;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>标题</div>
+</body>
+</html>
