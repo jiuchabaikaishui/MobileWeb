@@ -22,7 +22,8 @@ body {
         width: (750rem / @baseFont);
         height: (88rem / @baseFont);
         background-color: orange;
-        position: relative;
+        position: fixed;
+        top: 0;
         left: 50%;
         transform: translate(-50%);
         display: flex;
@@ -32,6 +33,7 @@ body {
             height: (70rem / @baseFont);
             background-image: url(../images/classify.png);
             margin: 0 (10rem / @baseFont) 0 (10rem / @baseFont);
+            background-size: (44rem / @baseFont) (70rem / @baseFont);
         }
         > .search {
             flex: 1;
@@ -59,6 +61,7 @@ body {
         }
     }
     .banner {
+        margin-top: (88rem / @baseFont);
         background-color: green;
         font-size: 0;
         > img {

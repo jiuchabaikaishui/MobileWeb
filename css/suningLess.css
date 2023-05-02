@@ -62,7 +62,8 @@ body .search-content {
   width: 15rem;
   height: 1.76rem;
   background-color: orange;
-  position: relative;
+  position: fixed;
+  top: 0;
   left: 50%;
   transform: translate(-50%);
   display: flex;
@@ -73,6 +74,7 @@ body .search-content > .classify {
   height: 1.4rem;
   background-image: url(../images/classify.png);
   margin: 0 0.2rem 0 0.2rem;
+  background-size: 0.88rem 1.4rem;
 }
 body .search-content > .search {
   flex: 1;
@@ -99,6 +101,7 @@ body .search-content > .login {
   color: white;
 }
 body .banner {
+  margin-top: 1.76rem;
   background-color: green;
   font-size: 0;
 }
